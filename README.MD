@@ -24,7 +24,7 @@ Project aims to serve static content for "articles" section in the app.
 ## Article.json Structure
 
 | id		| description			| type		|
-|---------------------------------------------------------------|
+|---------------|-------------------------------|---------------|
 | id		| Unique ID			| int, unique	|
 | title		| Article title			| string	|
 | description	| Article body supporting MD	| string	|
