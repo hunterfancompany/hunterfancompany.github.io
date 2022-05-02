@@ -1,0 +1,17 @@
+{
+    "id": 1,
+    "title": "Setup Code Incorrect",
+    "description": "## If you have multiple fans\n\nIf you’re trying to 
+activate more than 1 SIMPLEconnect Hunter Fan, please power on and activate 
+only one fan at a time to ensure 2 things:\n - Correct remote is paired\n - 
+Correct activation code is used (the one with the Home Icon on the top)\n\n## 
+If you have only one SIMPLEconnect Hunter Fan\n\nIf you encounter “setup code 
+incorrect” issue please verify the QR code inside the remote, manual and on 
+top of the fan — they should be the same. If they differ try the code in the 
+manual and on the fan top — this should work.\n\nIf all the codes (remote, 
+manual, top of the fan) are the same, but you still receive the error 
+'incorrect setup code' — please [contact support](hunterfan://support?id=1)",
+    "image": null,
+    "related": [],
+    "fallback": null
+}
