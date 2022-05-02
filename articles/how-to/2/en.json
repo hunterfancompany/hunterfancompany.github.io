@@ -1,0 +1,8 @@
+{
+  "id": 2,
+  "title": "Wi-Fi Security Protocols Support",
+  "description": "## Wi-Fi Security Protocol Support\n\n| Security  | Supported         |\n|-----------|-------------------|\n| WPA       | YES               |\n| WPA2      | YES, PREFERRED    |\n| WPA3      | LIMITED           |",
+  "image": null,
+  "related": [],
+  "fallback": null
+}
