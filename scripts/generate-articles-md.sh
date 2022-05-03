@@ -2,11 +2,17 @@ if which jq >/dev/null; then
   find . -type f -name "*.json" ! -name "all.json" -print0 |
     while IFS= read -r -d '' file; do 
       echo "Processing $file..."
-      mdfile="${file%.*}.md"
+      mdfolder="${file%.*}"
+      mdfile="${mdfolder}/index.md"
+      mkdir -p $mdfolder
       rm -rf $mdfile
       touch $mdfile
-      echo "##" >> $mdfile
-      jq -r ".title" $file >> $mdfile
+
+      echo -e "# $(jq -r ".title" $file)\n" >> $mdfile
+      image=$(jq -r ".image" $file)
+      if [ $image != "null" ]; then
+        echo -e "![title]($image)\n" >> $mdfile
+      fi
       jq -r ".description" $file >> $mdfile
     done
 else
