@@ -1,6 +1,6 @@
 title: SIMPLEconnect Resource Center
 email: apps@hunterfan.com
-theme: minimal
+theme: minima
 
 include:
   - .config
