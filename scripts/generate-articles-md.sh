@@ -17,7 +17,7 @@ function findfile {
 }
 
 if which jq >/dev/null; then
-  find . -type f -name "*.json" ! -name "all.json" -print0 | while IFS= read -r -d '' file; do
+  find . -type f -name "*.json" ! -name "all.json" ! -path "./.config/*" -print0 | while IFS= read -r -d '' file; do
     echo "Processing $file..."
 
     mdfolder="${file%.*}"
